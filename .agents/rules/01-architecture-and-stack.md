@@ -27,4 +27,4 @@ Always map data to the correct database:
 - **PostgreSQL:** Relational data (Users, Workspaces, RBAC, hierarchical folder structures using `WITH RECURSIVE`).
 - **ArangoDB / NebulaGraph:** Deep relational queries (n-level node/edge connections).
 - **ScyllaDB:** Extremely fast NoSQL storage for full mind-map Snapshots (C++ engine).
-- **Redis:** Volatile, in-memory data (Presence, live mouse coordinates).
+- **Redis:** Volatile, in-memory data (Presence, live mouse coordinates).nx add @nx/next
