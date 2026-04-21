@@ -17,6 +17,9 @@
     },
     {
       "path": "./apps/ui-shell-e2e"
+    },
+    {
+      "path": "./libs/shared-schema"
     }
   ]
 }
