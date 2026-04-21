@@ -1,0 +1,28 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: lucidia-postgres
+    environment:
+      POSTGRES_USER: lucidia_dev
+      POSTGRES_PASSWORD: lucidia_password
+      POSTGRES_DB: lucidia_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - lucidia-postgres-data:/var/lib/postgres/data
+    restart: unless-stopped
+  
+  redis:
+    image: redis:7-alpine
+    container_name: lucidia-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - lucidia-redis-data:/data
+    restart: unless-stopped
+
+volumes:
+  lucidia-postgres-data:
+    name: lucidia-postgres-data
+  lucidia-redis-data:
+    name: lucidia-redis-data

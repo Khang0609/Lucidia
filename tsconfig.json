@@ -8,6 +8,15 @@
     },
     {
       "path": "./apps/ui-shell"
+    },
+    {
+      "path": "./apps/api-gateway-e2e"
+    },
+    {
+      "path": "./apps/api-gateway"
+    },
+    {
+      "path": "./apps/ui-shell-e2e"
     }
   ]
 }
